@@ -9,7 +9,7 @@
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/idCardbloco"
         android:layout_width="200dp"
-        android:layout_height="150dp"
+        android:layout_height="250dp"
         android:layout_margin="10dp"
         android:checkable="true"
         android:clickable="true"
@@ -20,28 +20,62 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/idCardlogo"
-            android:layout_width="96dp"
-            android:layout_height="96dp"
-            android:src="@drawable/avataric"
-            app:civ_border_color="#F02090"
-            app:civ_border_width="2dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="2dp"
-            android:layout_marginBottom="2dp"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/idCardlogo"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/avataric"
+                app:civ_border_color="#F02090"
+                app:civ_border_width="2dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="Goiaba"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
+                android:text="Goiaba"
                 android:textSize="16dp"
-                android:textStyle="bold"
-                />
-    </LinearLayout>
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    style="@style/Widget.MaterialRatingBar.RatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:numStars="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_share"
+                    android:id="@+id/iconShare"
+                    android:text="9.5"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_favorite"
+                    android:id="@+id/iconFavo"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_bookmark"
+                    android:id="@+id/iconBook"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
 
